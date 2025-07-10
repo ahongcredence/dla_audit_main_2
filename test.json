@@ -1,0 +1,16 @@
+{
+  "knowledge_response": {
+    "llm_prompt": "System: You are a helpful assistant that provides accurate information based on the following sources:\\nSource 1: question:howdoimanageuserrolesinwawf?answer:asacontractoradministrator(cam)orgovernmentadministratormanager(gam),youcanmanageuserroleswithinyourgroupandanysubgroups.todothis,youcanfollowthesesteps:\n\n- logintothesystemandnavigatetotheadministrationlinkatthetopofthepage2.selectthegrouporsubgroupforwhichyouwanttomanageuserroles.orselectusermanagement\n\n- asacamorgamyoucanmanageusersby\"group\"orbyperson\n\nUser: Who is my GAM?",
+    "sources": [
+      {
+        "id": "c3f6a9f5-2765-4874-b62f-24c2cf6148ed-c75aba3c-9b1c-491a-9e2a-bd70a7519e0e",
+        "document_title": "Registration and Activation FAQ 86",
+        "document_uri": "https://s3.us-gov-west-1.amazonaws.com/piee-sq-chatbot-document-bucket-dev/FAQ/Registration and Activation FAQ 86.txt",
+        "document_excerpt": "question:howdoimanageuserrolesinwawf?answer:asacontractoradministrator(cam)orgovernmentadministratormanager(gam),youcanmanageuserroleswithinyourgroupandanysubgroups.todothis,youcanfollowthesesteps:1.logintothesystemandnavigatetotheadministrationlinkatthetopofthepage2.selectthegrouporsubgroupforwhichyouwanttomanageuserroles.orselectusermanagement.3.asacamorgamyoucanmanageusersby\"group\"orbyperson.",
+        "similarity_score": 0.75
+      }
+    ],
+    "triggered_guards": []
+  },
+  "max_length": 200
+}

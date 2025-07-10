@@ -1,0 +1,274 @@
+{
+  "columns": [
+    {
+      "key": "sourceIp",
+      "label": "Source IP",
+      "width": "auto",
+      "sortable": true
+    },
+    {
+      "key": "destinationIp",
+      "label": "Destination IP",
+      "width": "188px",
+      "sortable": true
+    },
+    {
+      "key": "action",
+      "label": "Action",
+      "width": "auto",
+      "sortable": true
+    },
+    {
+      "key": "startTime",
+      "label": "Start Time",
+      "width": "162px",
+      "sortable": true
+    },
+    {
+      "key": "endTime",
+      "label": "End Time",
+      "width": "auto",
+      "sortable": true
+    },
+    {
+      "key": "packets",
+      "label": "Packets",
+      "width": "94px",
+      "sortable": true
+    },
+    {
+      "key": "bytes",
+      "label": "Bytes",
+      "width": "95px",
+      "sortable": true
+    },
+    {
+      "key": "details",
+      "label": "Details",
+      "width": "300px",
+      "sortable": false
+    }
+  ],
+  "data": [
+    {
+      "id": 1,
+      "sourceIp": "101.251.0.0",
+      "destinationIp": "10.200.3",
+      "action": "REJECT",
+      "startTime": "04/10/25 15:30:11",
+      "endTime": "04/10/25 15:32:27",
+      "packets": 2145,
+      "bytes": 5874962,
+      "details": "Database backup operation"
+    },
+    {
+      "id": 2,
+      "sourceIp": "101.251.0.0",
+      "destinationIp": "203.0.113.0",
+      "action": "REJECT",
+      "startTime": "04/10/25 16:47:33",
+      "endTime": "04/10/25 16:47:39",
+      "packets": 31,
+      "bytes": 85400,
+      "details": "Failed admin login - incorrect credentials"
+    },
+    {
+      "id": 3,
+      "sourceIp": "101.251.0.0",
+      "destinationIp": "192.168.1",
+      "action": "ACCEPT",
+      "startTime": "04/10/25 18:22:05",
+      "endTime": "04/10/25 18:25:18",
+      "packets": 427,
+      "bytes": 47105,
+      "details": "Unusual outbound connection to port 4444"
+    },
+    {
+      "id": 4,
+      "sourceIp": "203.0.113.0",
+      "destinationIp": "172.31.32",
+      "action": "REJECT",
+      "startTime": "04/10/25 20:14:57",
+      "endTime": "04/10/25 20:16:02",
+      "packets": 258,
+      "bytes": 3400,
+      "details": "VPN connection established"
+    },
+    {
+      "id": 5,
+      "sourceIp": "192.168.1",
+      "destinationIp": "101.251.0.0",
+      "action": "ACCEPT",
+      "startTime": "04/10/25 22:05:43",
+      "endTime": "04/10/25 22:05:46",
+      "packets": 17,
+      "bytes": 1600,
+      "details": "DNS request to suspicious domain"
+    },
+    {
+      "id": 6,
+      "sourceIp": "172.31.32",
+      "destinationIp": "101.251.0.0",
+      "action": "ACCEPT",
+      "startTime": "04/11/25 01:17:22",
+      "endTime": "04/11/25 01:17:25",
+      "packets": 8,
+      "bytes": 4721056,
+      "details": "Firewall rule update"
+    },
+    {
+      "id": 7,
+      "sourceIp": "10.0.0.1",
+      "destinationIp": "192.168.50.1",
+      "action": "ACCEPT",
+      "startTime": "04/11/25 03:45:12",
+      "endTime": "04/11/25 03:45:15",
+      "packets": 42,
+      "bytes": 12800,
+      "details": "System health check"
+    },
+    {
+      "id": 8,
+      "sourceIp": "198.51.100.0",
+      "destinationIp": "10.1.1.1",
+      "action": "REJECT",
+      "startTime": "04/11/25 05:22:33",
+      "endTime": "04/11/25 05:22:40",
+      "packets": 156,
+      "bytes": 89600,
+      "details": "Suspicious port scan detected"
+    },
+    {
+      "id": 9,
+      "sourceIp": "172.16.0.1",
+      "destinationIp": "203.0.113.5",
+      "action": "ACCEPT",
+      "startTime": "04/11/25 07:15:28",
+      "endTime": "04/11/25 07:18:45",
+      "packets": 892,
+      "bytes": 2456789,
+      "details": "Large file transfer"
+    },
+    {
+      "id": 10,
+      "sourceIp": "192.0.2.1",
+      "destinationIp": "10.10.10.10",
+      "action": "REJECT",
+      "startTime": "04/11/25 09:33:17",
+      "endTime": "04/11/25 09:33:20",
+      "packets": 23,
+      "bytes": 7200,
+      "details": "Blocked malware communication"
+    },
+    {
+      "id": 11,
+      "sourceIp": "10.20.30.40",
+      "destinationIp": "172.31.0.1",
+      "action": "ACCEPT",
+      "startTime": "04/11/25 11:47:55",
+      "endTime": "04/11/25 11:48:02",
+      "packets": 67,
+      "bytes": 34500,
+      "details": "API authentication request"
+    },
+    {
+      "id": 12,
+      "sourceIp": "203.0.113.10",
+      "destinationIp": "192.168.2.5",
+      "action": "ACCEPT",
+      "startTime": "04/11/25 13:12:44",
+      "endTime": "04/11/25 13:15:33",
+      "packets": 1245,
+      "bytes": 8945632,
+      "details": "Video conference session"
+    },
+    {
+      "id": 13,
+      "sourceIp": "10.5.5.5",
+      "destinationIp": "198.51.100.25",
+      "action": "REJECT",
+      "startTime": "04/11/25 15:28:19",
+      "endTime": "04/11/25 15:28:22",
+      "packets": 12,
+      "bytes": 3600,
+      "details": "Unauthorized access attempt"
+    },
+    {
+      "id": 14,
+      "sourceIp": "172.20.0.100",
+      "destinationIp": "10.0.1.50",
+      "action": "ACCEPT",
+      "startTime": "04/11/25 17:41:07",
+      "endTime": "04/11/25 17:41:12",
+      "packets": 89,
+      "bytes": 45600,
+      "details": "Database query execution"
+    },
+    {
+      "id": 15,
+      "sourceIp": "192.168.100.1",
+      "destinationIp": "203.0.113.15",
+      "action": "ACCEPT",
+      "startTime": "04/11/25 19:55:31",
+      "endTime": "04/11/25 19:57:18",
+      "packets": 567,
+      "bytes": 1234567,
+      "details": "Software update download"
+    },
+    {
+      "id": 16,
+      "sourceIp": "10.100.200.50",
+      "destinationIp": "172.16.5.10",
+      "action": "REJECT",
+      "startTime": "04/11/25 21:13:45",
+      "endTime": "04/11/25 21:13:48",
+      "packets": 34,
+      "bytes": 15200,
+      "details": "Policy violation detected"
+    },
+    {
+      "id": 17,
+      "sourceIp": "198.51.100.50",
+      "destinationIp": "192.168.3.25",
+      "action": "ACCEPT",
+      "startTime": "04/11/25 23:27:12",
+      "endTime": "04/11/25 23:29:55",
+      "packets": 723,
+      "bytes": 3456789,
+      "details": "Backup synchronization"
+    },
+    {
+      "id": 18,
+      "sourceIp": "172.25.1.1",
+      "destinationIp": "10.50.75.100",
+      "action": "ACCEPT",
+      "startTime": "04/12/25 01:44:33",
+      "endTime": "04/12/25 01:44:38",
+      "packets": 156,
+      "bytes": 78900,
+      "details": "Monitoring agent heartbeat"
+    },
+    {
+      "id": 19,
+      "sourceIp": "203.0.113.100",
+      "destinationIp": "192.168.4.10",
+      "action": "REJECT",
+      "startTime": "04/12/25 03:58:21",
+      "endTime": "04/12/25 03:58:25",
+      "packets": 45,
+      "bytes": 23400,
+      "details": "Intrusion attempt blocked"
+    },
+    {
+      "id": 20,
+      "sourceIp": "10.75.25.5",
+      "destinationIp": "172.30.40.20",
+      "action": "ACCEPT",
+      "startTime": "04/12/25 06:15:47",
+      "endTime": "04/12/25 06:16:12",
+      "packets": 234,
+      "bytes": 567890,
+      "details": "Email server communication"
+    }
+  ]
+}

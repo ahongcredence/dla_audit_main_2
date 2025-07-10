@@ -1,0 +1,238 @@
+@import "tailwindcss";
+
+/* 
+ * GOVERNMENT APPLICATION - DARK MODE DISABLED
+ * This application is designed for government use and must maintain
+ * a consistent light theme regardless of user system preferences.
+ * DO NOT add dark mode support or @media (prefers-color-scheme: dark) queries.
+ */
+
+// ===== CSS CUSTOM PROPERTIES =====
+:root {
+  /* Locked to light mode values only */
+  --background: color-mix(
+    in srgb,
+    var(--color-auditinsight-primary) 5%,
+    white 95%
+  );
+  --foreground: var(--color-auditinsight-primary);
+
+  /* Explicitly declare light color scheme */
+  color-scheme: light only;
+
+  /* Gradient definitions for charts */
+  --gradient-audit-primary: linear-gradient(
+    135deg,
+    var(--color-auditinsight-primary) 0%,
+    var(--color-auditinsight-primary-40) 100%
+  );
+  --gradient-audit-secondary: linear-gradient(
+    135deg,
+    var(--color-auditinsight-secondary) 0%,
+    var(--color-auditinsight-secondary-40) 100%
+  );
+  --gradient-audit-mixed: linear-gradient(
+    135deg,
+    var(--color-auditinsight-primary) 0%,
+    var(--color-auditinsight-secondary) 100%
+  );
+  --gradient-audit-blue-light: linear-gradient(
+    135deg,
+    var(--color-auditinsight-primary-40) 0%,
+    var(--color-auditinsight-primary-20) 100%
+  );
+  --gradient-audit-teal-light: linear-gradient(
+    135deg,
+    var(--color-auditinsight-secondary-40) 0%,
+    var(--color-auditinsight-secondary-20) 100%
+  );
+
+  /* Radial gradients for pie/donut charts */
+  --gradient-audit-primary-radial: radial-gradient(
+    circle,
+    var(--color-auditinsight-primary) 0%,
+    var(--color-auditinsight-primary-60) 100%
+  );
+  --gradient-audit-secondary-radial: radial-gradient(
+    circle,
+    var(--color-auditinsight-secondary) 0%,
+    var(--color-auditinsight-secondary-60) 100%
+  );
+  --gradient-audit-blue-light-radial: radial-gradient(
+    circle,
+    var(--color-auditinsight-primary-40) 0%,
+    var(--color-auditinsight-primary-70) 100%
+  );
+  --gradient-audit-teal-light-radial: radial-gradient(
+    circle,
+    var(--color-auditinsight-secondary-40) 0%,
+    var(--color-auditinsight-secondary-70) 100%
+  );
+
+  /* SCSS Variables for compatibility */
+  --primary-color: #0d76ba;
+  --primary-dark: #00528f;
+  --secondary-color: #9b2743;
+  --white: #ffffff;
+  --border: #e5e7eb;
+  --text: #182851;
+  --text-muted: #6c757d;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 4px 20px rgba(13, 118, 186, 0.15);
+  --border-radius: 8px;
+  --transition: all 0.2s ease;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Primary Colors */
+  --color-auditinsight-primary-light: #23356d;
+  --color-auditinsight-primary: #182851;
+  /* Deep Navy */
+  --color-auditinsight-primary-dark: #111a36;
+
+  --color-auditinsight-primary-100: #111a36;
+  /* dark */
+  --color-auditinsight-primary-90: #131d3c;
+  --color-auditinsight-primary-80: #152041;
+  --color-auditinsight-primary-70: #172347;
+  --color-auditinsight-primary-60: #18264c;
+  --color-auditinsight-primary-50: #182851;
+  /* base */
+  --color-auditinsight-primary-40: #1d2d59;
+  --color-auditinsight-primary-30: #203264;
+  --color-auditinsight-primary-20: #23356d;
+  --color-auditinsight-primary-10: #2b417e;
+  /* light */
+
+  --color-auditinsight-secondary-light: #3db4c8;
+  --color-auditinsight-secondary: #1d8da7;
+  /* Cyan Blue */
+  --color-auditinsight-secondary-dark: #176e85;
+
+  --color-auditinsight-secondary-100: #176e85;
+  --color-auditinsight-secondary-90: #187a90;
+  --color-auditinsight-secondary-80: #19879b;
+  --color-auditinsight-secondary-70: #1a93a5;
+  --color-auditinsight-secondary-60: #1b9eb0;
+  --color-auditinsight-secondary-50: #1d8da7;
+  --color-auditinsight-secondary-40: #27a4b8;
+  --color-auditinsight-secondary-30: #30acc0;
+  --color-auditinsight-secondary-20: #3db4c8;
+  --color-auditinsight-secondary-10: #5cc4d4;
+
+  --color-auditinsight-tertiary: #d36582; // blush
+
+  --color-auditinsight-tertiary-10: #fdf9fa;
+  --color-auditinsight-tertiary-20: #f9eef2;
+  --color-auditinsight-tertiary-30: #f3dde4;
+  --color-auditinsight-tertiary-40: #ebc8d3;
+  --color-auditinsight-tertiary-50: #d36582;
+  --color-auditinsight-tertiary-60: #c94f73;
+  --color-auditinsight-tertiary-70: #b13d62;
+  --color-auditinsight-tertiary-80: #932f4f;
+  --color-auditinsight-tertiary-90: #72243d;
+  --color-auditinsight-tertiary-100: #4a1729;
+
+  /* Tailwind gray shades */
+  --color-auditinsight-gray-100: #111827;
+  /* gray-900 */
+  --color-auditinsight-gray-90: #1f2937;
+  /* gray-800 */
+  --color-auditinsight-gray-80: #374151;
+  /* gray-700 */
+  --color-auditinsight-gray-70: #4b5563;
+  /* gray-600 */
+  --color-auditinsight-gray-60: #6b7280;
+  /* gray-500 */
+  --color-auditinsight-gray-50: #9ca3af;
+  /* gray-400 */
+  --color-auditinsight-gray-40: #d1d5db;
+  /* gray-300 */
+  --color-auditinsight-gray-30: #e5e7eb;
+  /* gray-200 */
+  --color-auditinsight-gray-20: #f3f4f6;
+  /* gray-100 */
+  --color-auditinsight-gray-10: #f9fafb;
+  /* gray-50 */
+}
+
+/* Force light mode regardless of system preferences */
+html {
+  color-scheme: light only;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Ensure light mode is enforced */
+  color-scheme: light only;
+}
+
+/* Prevent any potential dark mode overrides */
+* {
+  color-scheme: light only;
+}
+
+// ===== CHAT INPUT STYLING =====
+// Moved to Tailwind utility classes
+
+// ===== ANIMATIONS =====
+@keyframes loading-bar {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 75%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-loading-bar {
+  animation: loading-bar 2s ease-in-out infinite;
+}
+
+// ===== ANIMATIONS =====
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// ===== SCROLLBAR STYLING =====
+.scrollbar-hide {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+
+  &::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
+  }
+}
+
+// ===== ACCESSIBILITY =====
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

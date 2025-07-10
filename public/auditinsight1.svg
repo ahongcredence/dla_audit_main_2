@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="AUDIT_INSIGHT" data-name="AUDIT INSIGHT" viewBox="0 0 347 75" width="347" height="75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d8da7;
+        font-family: Wingdings3, 'Wingdings 3';
+        font-size: 16.88px;
+      }
+
+      .cls-2 {
+        filter: url(#drop-shadow-2);
+      }
+
+      .cls-3 {
+        font-family: AvenirNextLTPro-Regular, 'Avenir Next LT Pro';
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: #6d6e71;
+        font-size: 22.27px;
+      }
+
+      .cls-7 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        font-family: AvenirNextLTPro-It, 'Avenir Next LT Pro';
+        font-style: italic;
+      }
+
+      .cls-8 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-10 {
+        fill: #182851;
+        filter: url(#drop-shadow-1);
+        font-family: AvenirNextLTPro-Bold, 'Avenir Next LT Pro';
+        font-size: 46.46px;
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        letter-spacing: -.01em;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood flood-color="#231f20" flood-opacity=".5"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3"/>
+      <feGaussianBlur result="blur-2" stdDeviation="2"/>
+      <feFlood flood-color="#231f20" flood-opacity=".5"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text class="cls-10" transform="translate(.65 39.68)"><tspan class="cls-9" x="0" y="0">A</tspan><tspan x="33.03" y="0">UDI</tspan><tspan class="cls-8" x="118.05" y="0">T</tspan><tspan x="143.93" y="0" xml:space="preserve"> INSIGH</tspan><tspan class="cls-7" x="320.47" y="0">T</tspan></text>
+  <text class="cls-2" transform="translate(1.49 64.67)"><tspan class="cls-5" x="0" y="0">Analyze</tspan><tspan class="cls-3" x="79.02" y="0"> </tspan><tspan class="cls-1" x="84.59" y="0"></tspan><tspan class="cls-3" x="99.63" y="0"> </tspan><tspan class="cls-5" x="105.2" y="0">Interp</tspan><tspan class="cls-6" x="165" y="0">r</tspan><tspan class="cls-5" x="172.48" y="0">et</tspan><tspan class="cls-3" x="191.92" y="0"> </tspan><tspan class="cls-1" x="197.49" y="0"></tspan><tspan class="cls-3" x="212.53" y="0"> </tspan><tspan class="cls-4" x="218.1" y="0">R</tspan><tspan class="cls-5" x="231.17" y="0">ecommend</tspan></text>
+</svg>

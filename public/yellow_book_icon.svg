@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="5 2 22 30">
+  <!-- Government Auditing Standards (Yellow Book) - Detailed book with official elements -->
+  
+  <!-- Book cover -->
+  <rect x="5" y="2" width="22" height="30" rx="2" fill="currentColor"/>
+  <rect x="7" y="4" width="18" height="26" rx="1" fill="white"/>
+  
+  <!-- Book spine detail -->
+  <rect x="5" y="2" width="3" height="30" rx="2" fill="currentColor"/>
+  <rect x="6" y="4" width="1" height="26" fill="white"/>
+  
+  <!-- Binding rings/holes -->
+  <circle cx="6.5" cy="7" r="0.5" fill="currentColor"/>
+  <circle cx="6.5" cy="12" r="0.5" fill="currentColor"/>
+  <circle cx="6.5" cy="17" r="0.5" fill="currentColor"/>
+  <circle cx="6.5" cy="22" r="0.5" fill="currentColor"/>
+  <circle cx="6.5" cy="27" r="0.5" fill="currentColor"/>
+  
+  <!-- Title area -->
+  <rect x="9" y="6" width="14" height="4" rx="0.5" fill="currentColor"/>
+  <rect x="9.5" y="6.5" width="13" height="3" rx="0.3" fill="white"/>
+  
+  <!-- Title text representation -->
+  <rect x="10" y="7" width="8" height="0.8" rx="0.2" fill="currentColor"/>
+  <rect x="10" y="8.2" width="11" height="0.8" rx="0.2" fill="currentColor"/>
+  
+  <!-- Government seal/emblem -->
+  <circle cx="16" cy="16" r="4.5" fill="currentColor"/>
+  <circle cx="16" cy="16" r="3.5" fill="white"/>
+  <circle cx="16" cy="16" r="2.8" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  
+  <!-- Inner seal elements -->
+  <circle cx="16" cy="16" r="1.8" fill="none" stroke="currentColor" stroke-width="0.5"/>
+  
+  <!-- Star in center -->
+  <path d="M16 14.5l0.5 1.2h1.3l-1 0.8 0.4 1.2-1.2-0.9-1.2 0.9 0.4-1.2-1-0.8h1.3z" fill="currentColor"/>
+  
+  <!-- Radiating lines -->
+  <line x1="16" y1="12.5" x2="16" y2="13.2" stroke="currentColor" stroke-width="0.4"/>
+  <line x1="18.2" y1="13.4" x2="17.7" y2="13.8" stroke="currentColor" stroke-width="0.4"/>
+  <line x1="19" y1="16" x2="18.3" y2="16" stroke="currentColor" stroke-width="0.4"/>
+  <line x1="18.2" y1="18.6" x2="17.7" y2="18.2" stroke="currentColor" stroke-width="0.4"/>
+  <line x1="16" y1="19.5" x2="16" y2="18.8" stroke="currentColor" stroke-width="0.4"/>
+  <line x1="13.8" y1="18.6" x2="14.3" y2="18.2" stroke="currentColor" stroke-width="0.4"/>
+  <line x1="13" y1="16" x2="13.7" y2="16" stroke="currentColor" stroke-width="0.4"/>
+  <line x1="13.8" y1="13.4" x2="14.3" y2="13.8" stroke="currentColor" stroke-width="0.4"/>
+  
+  <!-- "GAO" text -->
+  <text x="16" y="23.5" font-family="Arial, sans-serif" font-size="3" font-weight="bold" fill="currentColor" text-anchor="middle">GAO</text>
+  
+  <!-- Content lines at bottom -->
+  <rect x="9" y="26" width="12" height="0.5" rx="0.2" fill="currentColor"/>
+  <rect x="9" y="27.5" width="10" height="0.5" rx="0.2" fill="currentColor"/>
+  <rect x="9" y="29" width="14" height="0.5" rx="0.2" fill="currentColor"/>
+  
+  <!-- Page edge detail -->
+  <path d="M27 3v28l-1-1V4z" fill="currentColor" opacity="0.3"/>
+</svg>
