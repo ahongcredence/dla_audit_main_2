@@ -53,9 +53,7 @@ export interface KnowledgeBase {
   id: string;
 }
 
-//export interface KnowledgeHubMessageProps extends ChatMessageBubbleProps {
-// Additional Knowledge Hub specific props can be added here
-//}
+export type KnowledgeHubMessageProps = ChatMessageBubbleProps;
 
 // Predict Insight specific types
 export interface PredictInsightMessageProps extends ChatMessageBubbleProps {
